@@ -1,0 +1,108 @@
+.reports-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reports-container h2 {
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.work-weeks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.work-week-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.work-week-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work-week-item.current-week {
+  border: 2px solid #007bff;
+  background-color: #f8f9ff;
+}
+
+.week-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.week-number {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.current-week-badge {
+  background-color: #007bff;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.week-dates {
+  color: #666;
+  font-size: 14px;
+}
+
+.week-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.download-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.download-btn:hover:not(.disabled) {
+  background-color: #0056b3;
+}
+
+.download-btn.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .work-week-item {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .week-actions {
+    width: 100%;
+  }
+
+  .download-btn {
+    flex: 1;
+    text-align: center;
+  }
+}

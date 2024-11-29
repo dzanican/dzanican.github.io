@@ -1,0 +1,164 @@
+.utilization-container {
+  padding: 20px;
+  width: 100%;
+}
+
+.utilization-header {
+  margin-bottom: 24px;
+}
+
+.utilization-header h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.date-range {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.date-input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.date-input label {
+  font-size: 14px;
+  color: #666;
+}
+
+.date-input input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+.utilization-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.utilization-table th,
+.utilization-table td {
+  padding: 12px;
+  border: 1px solid #eee;
+}
+
+.day-column {
+  width: 120px;
+  text-align: left;
+  background-color: #f8f9fa;
+}
+
+.srv-column {
+  width: 120px;
+  text-align: left;
+  background-color: #f8f9fa;
+}
+
+.activity-column {
+  min-width: 150px;
+  background-color: #f8f9fa;
+  flex: 1;
+}
+
+.activity-column select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.add-column {
+  width: 50px;
+  background-color: transparent;
+  border: none;
+}
+
+.add-column-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.add-column-btn:hover {
+  background-color: #0056b3;
+}
+
+.day-cell {
+  font-weight: 500;
+  background-color: #f8f9fa;
+}
+
+.srv-cell input,
+.hours-cell input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.hours-cell input {
+  text-align: center;
+}
+
+.day-total {
+  font-weight: 500;
+  background-color: #f8f9fa;
+  text-align: center;
+  width: 80px;
+}
+
+.total-row {
+  font-weight: 500;
+  background-color: #f8f9fa;
+}
+
+.total-row td {
+  text-align: center;
+}
+
+.total-row td:first-child {
+  text-align: left;
+}
+
+.submit-report {
+  margin-top: 24px;
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.submit-report:hover {
+  background-color: #218838;
+}
